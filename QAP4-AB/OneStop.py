@@ -46,13 +46,13 @@ def CalcMonthPayment(TotalCost, DownPayment = 0):
 def CalcExtraCosts(LiaCoverage, GlCoverage, LoanerCoverage):
     AddExtraCosts = 0
     if LiaCoverage == "Y":
-        AddExtraCosts += COST_EX_LIA_COV
+        AddExtraCosts += COST_EX_LIA_COV * NumCarIns
 
     if GlCoverage == "Y":
-        AddExtraCosts += COST_GL_COV
+        AddExtraCosts += COST_GL_COV * NumCarIns
 
     if LoanerCoverage == "Y":
-        AddExtraCosts += COST_LOAN_CAR_COV
+        AddExtraCosts += COST_LOAN_CAR_COV * NumCarIns
 
     return AddExtraCosts
 
