@@ -77,7 +77,7 @@ def FDateL(DateValue):
 
     return DateValueStr
 
-### RELIVENT FORMATTING FUNCTION ###
+### RELEVANT FORMATTING FUNCTION ###
 def FormatClaimData(Claims):
     FormatClaims = ""
     for Claim in Claims:
